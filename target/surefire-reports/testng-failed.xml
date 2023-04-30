@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [order]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)" verbose="0">
+    <classes>
+      <class name="pageObjects.ErrorValidations">
+        <methods>
+          <include name="submitOrder"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="terminateDriverInstance"/>
+        </methods>
+      </class> <!-- pageObjects.ErrorValidations -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+</suite> <!-- Failed suite [order] -->

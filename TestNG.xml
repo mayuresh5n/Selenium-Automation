@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite  parallel="tests" name="order">
+    <listeners>
+        <listener class-name="testComponents.Listeners"></listener>
+    </listeners>
+
+    <test name="Error Validation" thread-count="5">
+        <classes>
+            <class name="pageObjects.ErrorValidations"/>
+        </classes>
+    </test>
+
+    <test thread-count="5" name="Submit Order" >
+        <classes>
+            <class name="pageObjects.standAlone"></class>
+        </classes>
+    </test>
+
+</suite>
