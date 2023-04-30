@@ -10,6 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.List;
 
+/* This code is used to read json file*/
 public class dataReader {
     public List<HashMap<String, String>> getJsonDataToMap() throws IOException {
         String jsonContent = FileUtils.readFileToString(new File(System.getProperty("user.dir") + "src//test//java//dataProvider//PurchaseOrder.json"), StandardCharsets.UTF_8);
